@@ -413,7 +413,93 @@
               <p>•  Se incluyen aquellos aspectos de la definición del sistema necesarios para proporcionar el contexto de los productos y servicios de software.</p>
               <p>•  También proporciona procesos que pueden emplearse para definir, controlar y mejorar los procesos del ciclo de vida del software dentro de una organización o de un proyecto.</p>
               <p>•  Esta norma no fomenta o especifica ningún modelo concreto de ciclo de vida, gestión del software o método de ingeniería, ni prescribe cómo realizar ninguna de las actividades.</p>              
-       
+              <img src="img/Software Life Cycle Processes.png" width="631" height="479">
+          <h2 class="mb-5">Ciclo de vida del SW</h2>
+              <p>•  Cuando un proceso implica la construcción de algún producto, suele referirse al proceso como un ciclo de vida</p>
+              <p>-El proceso de desarrollo de software suele denominarse ciclo de vida del software</p>
+              <p>•  La evolución del software representa el ciclo de ac7vidades involucradas en el desarrollo, uso y mantenimiento de sistemas software [Scacchi, 1987].</p>
+              <p>•  Los proyectos software se desarrollan en una serie de fases.</p>
+              <p>-Van desde la concepción del software y su desarrollo inicial hasta su puesta en funcionamiento y posterior retirada por otra nueva generación de software</p>
+              <p>Estas fases pueden ser:</p>
+              <p>-Temporales.- Forman una secuencia en el tiempo</p>
+              <p>-Lógicas.- Cuando representan pasos o etapas que no constituyen una secuencia temporal</p>
+              <p>Se puede definir ciclo de vida del software como:</p>
+              <p>-Las distintas fases por las que pasa el software desde que nace una necesidad de mecanizar un proceso hasta que deja de utilizarse el software que sirvió para ese objetivo, pasando por las fases de desarrollo y explotación [Frakes et al., 1991]</p>
+              <p>-El período de tiempo que comienza cuando se concibe un producto software y finaliza cuando el producto pierde su utilidad. El ciclo de vida del software incluye las siguientes fases: fase de requisitos, fase de diseño, fase de realización, fase de pruebas, fase de instalación y aceptación, fase de operación y mantenimiento y, algunas veces, fase de retirada [AECC, 1986]</p>
+              <p>-Un marco de referencia que contiene los procesos, las actividades y las tareas involucradas en el desarrollo, la explotación y el mantenimiento de un producto de software, abarcando la vida del sistema desde la definición de requisitos hasta la finalización de su uso [ISO/IEC, 2008]</p>
+              <p>-Una aproximación lógica a la adquisición, el suministro, el desarrollo, la explotación y el mantenimiento del software IEEE Std 1074-1997 Standard for Developing Software Life Cycle Processes [IEEE, 1999b]</p>
+              <p>-El ciclo de vida del software consiste de las siguientes fases: análisis de requisitos, diseño, implementación, prueba y mantenimiento. El proceso de desarrollo tiende a una iteración de estas fases más que a un proceso lineal [CERN, 1996].</p>
+              <p>-El ciclo de vida del software usa el modelo de que un elemento software tiene vida. Un elemento software tiene una fase de concepción (una idea en una mente de un usuario potencial), después de una fase de gestación (la fase de desarrollo del software) hacia una fase de madurez (la revisión y corrección de errores, o fase de mantenimiento), y finalmente la fase de retirada [Leaney, 2004]</p>
+              <p>Se puede definir ciclo de desarrollo del software como:</p>
+              <p>-El período de tiempo que comienza con la decisión de desarrollar un producto software y finaliza cuando se ha entregado éste. Este ciclo incluye, en general, una fase de requisitos, una fase de diseño, una fase de implantación, una fase de pruebas, y a veces, una fase de instalación y aceptación [AECC, 1986]</p>
+            <h3 class="mb-0">Ámbito general del ciclo de vida del SW</h3>
+              <p>Desde un punto de vista general puede considerarse que el ciclo de vida de un software tiene tres etapas claramente diferenciadas:</p>
+              <p>•  Planificación: idearemos un planeamiento detallado que guíe la gestión del proyecto, temporal y económicamente.</p>
+              <p>•  Implementación: acordaremos el conjunto de actividades que componen la realización del producto.</p>
+              <p>•  Puesta en producción: nuestro proyecto entra en la etapa de definición, allí donde se lo presentamos al cliente o usuario final, sabiendo que funciona correctamente y responde a los requerimientos solicitados en su momento. Esta etapa es muy importante no sólo por representar la aceptación o no del proyecto por parte del cliente o usuario final sino por las múltiples dificultades que suele presentar en la práctica, alargándose excesivamente y provocando costos no previstos.</p>
+            <h3 class="mb-0">Objetivos de cada etapa</h3>
+              <p>En cada una de las etapas de un modelo de ciclo de vida, se pueden establecer una serie de objetivos, tareas y actividades que lo caracterizan.</p>
+              <p>•  Expresión de necesidades: esta etapa tiene como objetivo el armado de un documento en el cual se reflejan los requerimientos y funcionalidades que ofrecerá al usuario el sistema a implementar (qué, y no cómo, se va a implementar).</p>
+              <p>•  Especificaciones: formalizamos los requerimientos; el documento obtenido en la etapa anterior se tomará como punto de partida para esta etapa.</p>
+              <p>•  Análisis: determinamos los elementos que intervienen en el sistema a desarrollar, su estructura, relaciones, evolución temporal, funcionalidades, tendremos una descripción clara de qué producto vamos a construir, qué funcionalidades aportará y qué comportamiento tendrá.</p>
+              <p>•  Diseño: ya sabemos qué hacer, ahora tenemos que determinar cómo debemos hacerlo (¿cómo debe ser construido el sistema en cuestión?; definimos en detalle entidades y relaciones de las bases de datos, seleccionamos el lenguaje que vamos a utilizar, el Sistema Gestor de Bases de Datos, etc.).</p>
+              <p>•  Implementación: empezamos a codificar algoritmos y estructuras de datos, definidos en las etapas anteriores, en el correspondiente lenguaje de programación o para un determinado sistema gestor de bases de datos. En muchos proyectos se pasa directamente a esta etapa; son proyectos muy arriesgados que adoptan un modelo de ciclo de vida de code & fix (codificar y corregir) donde se eliminan las etapas de especificaciones, análisis y diseño con la consiguiente pérdida de control sobre la gestión del proyecto.</p>
+              <p>•  Debugging: el objetivo de esta etapa es garantizar que nuestro programa no contiene errores de diseño o codificación. En esta etapa no deseamos saber si nuestro programa realiza lo que solicitó el usuario, esa tarea le corresponde a la etapa de implementación. En ésta deseamos encontrar la mayor cantidad de errores. Todos los programas contienen errores: encontrarlos es cuestión de tiempo. Lo ideal es encontrar la mayoría, si no todos, en esta etapa. También se pueden agregar testeos de performance.</p>
+              <p>•  Validación: esta etapa tiene como objetivo la verificación de que el sistema desarrollado cumple con los requerimientos expresados inicialmente por el cliente y que han dado lugar al presente proyecto. En muchos proyectos las etapas de validación y debugging se realizan en paralelo por la estrecha relación que llevan. Sin embargo, tenemos que evitar la confusión: podemos realizarlos en paralelo, pero no como una única etapa.</p>
+              <p>•  Evolución: en la mayoría de los proyectos se considera esta etapa como Mantenimiento y evolución, y se le asigna, no sólo el agregado de nuevas funcionalidades (evolución); sino la corrección de errores que surgen (mantenimiento). En la práctica esta denominación no es del todo errónea, ya que es posible que aun luego de una etapa de debugging y validación exhaustiva, se filtren errores.</p>
+            <h3 class="mb-0">¿Modelo de Proceso de SW?</h3>
+              <p>Hay varios modelos de procesos definidos en la bibliografía de Ingeniería del Software</p>
+              <p>Cada modelo de proceso representa un proceso desde una perspectiva particular, por lo que sólo ofrece una información parcial sobre dicho proceso.</p>
+            <h3 class="mb-0">Razones para modelar un proceso de SW</h3>
+              <p>•  Cuando se pone por escrito una descripción de un proceso, se da forma a una comprensión común de las actividades, recursos y restricciones relacionados con el desarrollo del software.</p>
+              <p>•  Ayuda al equipo de desarrollo a encontrar las inconsistencias, las redundancias y las omisiones en el proceso y en las partes que lo constituyen.</p>
+              <p>•  El modelo debe reflejar las metas del desarrollo. A medida que se construye el modelo el equipo de desarrollo evalúa las actividades candidatas por su adecuación para alcanzar dichas metas.</p>
+              <p>•  Ayuda al equipo de desarrollo a comprender dónde debe adaptarse el proceso</p>
+              <p>•  Los modelos de proceso de desarrollo de software incluyen los requisitos del sistema como entrada y un producto entregado como salida</p>
+            <h3 class="mb-0">Modelo general de proceso en Ingeniería</h3>
+              <p>•  Especificación</p>
+              <p>Formulación de los requisitos y restricciones del sistema </p>
+              <p>•  Diseño</p>
+              <p>Elaboración de un documento con el modelo del sistema</p>
+              <p>•  Fabricación</p>
+              <p>Construcción del sistema</p>
+              <p>•  Prueba</p>
+              <p>Comprobación de que el sistema cumple las especificaciones requeridas</p>
+              <p>•  Instalación</p>
+              <p>Entrega del sistema al cliente y garantía de que es operativo</p>
+              <p>•  Mantenimiento</p>
+              <p>Reparación de los fallos que aparecen en el sistema</p>
+              <p></p>
+              <p>En el proceso de construcción de sistemas informáticos se pueden distinguir tres fases genéricas:</p>
+              <p>•  Fase de definición</p>
+              <p>Se identifican los requisitos claves del sistema y del software</p>
+              <p>Se desarrolla</p>
+              <p>-Un Análisis de Sistemas</p>
+              <p>--Se define el papel de cada elemento en el sistema automatizado de información, incluyendo el que jugará el software</p>
+              <p>-Un Análisis de Requisitos</p>
+              <p>--Se especifican todos los requisitos de usuario que el sistema tiene que satisfacer</p>
+              <p>--Esta fase está orientada al QUÉ</p>
+              <p>---Qué información ha de ser procesada, qué función y rendimiento se desea, qué interfaces han de establecerse, qué ligaduras de diseño existen y qué criterios de validación se necesitan para definir un sistema correcto</p>
+              <p>Existe un paso complementario: la planificación del proyecto software:</p>
+              <p>-Se asignan los recursos</p>
+              <p>-Se estiman los costos</p>
+              <p>-Se planifican las tareas y el trabajo</p>
+              <p>•  Fase de desarrollo</p>
+              <p>Fase orientada al CÓMO</p>
+              <p>El primer paso de esta fase corresponde al Diseño del Software</p>
+              <p>-Se trasladan los requisitos del software a un conjunto de representaciones que describen la estructura de datos, arquitectura del software y procedimientos algorítmicos que permiten la construcción física de dicho software.</p>
+              <p>Los otros dos pasos de la fase de desarrollo corresponden a la Codificación y a la Prueba del Software</p>
+              <p>•  Fase de mantenimiento</p>
+              <p>-Mantenimiento correctivo</p>
+              <p>--Corrección de errores</p>
+              <p>-Mantenimiento adaptativo</p>
+              <p>--Adaptaciones requeridas por la evolución del entorno del software</p>
+              <p>-Mantenimiento perfectivo</p>
+              <p>--Las modificaciones debidas a los cambios de requisitos del usuario para mejorar el sistema</p>
+              <p>-Mantenimiento preventivo</p>
+              <p>--Mejora de las características internas del producto para hacer más mantenible</p>
+      </div>
+    </section>
 
     <hr class="m-0">
 
